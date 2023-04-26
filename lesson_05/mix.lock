@@ -1,0 +1,3 @@
+%{
+  "monex": {:hex, :monex, "0.1.17", "94274e75b1c18b9c35bcdb2f2f2a9b4f6c3edd263d4b08fce98e957f3a56a79a", [:mix], [], "hexpm", "23936c1fd8659ebdf49d668f2ffba163794e2b4897a1e1e143bf112f0cc7802f"},
+}
