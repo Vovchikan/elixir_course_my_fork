@@ -1,8 +1,9 @@
 ExUnit.start()
 
-defmodule WorldChampTest do
+defmodule Homework.WorldChampTest do
   use ExUnit.Case
-  import WorldChamp
+  doctest Homework.WorldChamp
+  import Homework.WorldChamp
 
   test "get stat" do
     champ = sample_champ()
