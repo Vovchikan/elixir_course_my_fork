@@ -157,11 +157,12 @@ defmodule Homework.WorldChamp do
     {:team, _, players2} = team2
     List.foldl(players1, [], fn
       {:player, name1, _age, rating1, _health}, acc ->
-        Enum.filter(players2, fn
+        Stream.filter(players2, fn
           {:player, _, _, rating2, _} ->
             rating2 + rating1 > 600
           end)
-        |> Enum.map(fn {:player, name2, _, _, _} -> {name1, name2} end)
+        |> Stream.map(fn {:player, name2, _, _, _} -> {name1, name2} end)
+        |> Enum.to_list()
         |> then(&(acc ++ &1))
       end)
   end
