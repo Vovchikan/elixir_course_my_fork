@@ -1,7 +1,8 @@
 ExUnit.start()
 
-defmodule CodeStatTest do
+defmodule Homework.CodeStatTest do
   use ExUnit.Case
+  alias Homework.CodeStat
 
   setup do
     tmp_dir = "./tmp"
